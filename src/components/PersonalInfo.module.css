@@ -1,0 +1,27 @@
+.personal__information {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 32px;
+        margin-bottom: 32px;
+        list-style: none;
+        text-decoration: none;
+        color:white;
+      }
+      
+      .info__description,
+      .info__title {
+        
+        font-size: 16px;
+      }
+      
+      .info__description {
+        margin-left: 8px;
+      }
+
+      @media screen and (min-width: 420px) {
+        .personal__information {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      

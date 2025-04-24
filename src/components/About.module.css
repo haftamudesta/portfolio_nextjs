@@ -1,0 +1,68 @@
+.about__container {
+        margin-left: 4px;
+      }
+      
+      .section__title {
+        text-align: center;
+      }
+      
+      .about__subtitle {
+        margin-bottom: 16px;
+        margin-top: 16px;
+      }
+      
+      .about__stats {
+        margin-left: 24px;
+      }
+      
+      .download_button {
+        display: inline-block;
+        color: var(--frist_color);
+        border: 1px solid #fff;
+        padding: 4px 36px 4px  24px;
+        border-radius: 32px;
+        font-size: var(--normal_font_size);
+        font-family: var(--second_font);
+        position: relative;
+        overflow: hidden;
+        margin-left: 55px;
+        color: white;
+      }
+      
+      .download_button:hover {
+        color: #fff;
+      }
+      
+      .download_button::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: aqua;
+        transform: translate(100%);
+        z-index: -1;
+      }
+      
+      .download_button:hover::before {
+        transform: translate(0);
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .butto__icon {
+        background-color: aqua;
+        position: absolute;
+        inset-block: -2px;
+        right: 0;
+        width: 35px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: var(--normal_font_size);
+        line-height: 40px;
+      }
+      
+      @media screen and (min-width: 768px) {
+        .about__container {
+          display: flex;
+          margin-left: 24px;
+        }
+      }
+      

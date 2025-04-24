@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+.submit-btn {
+  
+  margin-left: -120px;
+  position: relative;
+  padding: 8px 12px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: transparent;
+  background-color: chartreuse;
+  text-shadow: 0 0 3px;
+  border-radius: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  transition:
+    border 1s,
+    color 0.5s,
+    background-color 0.5s 0.2s,
+    box-shadow 0.5s 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: rgb(93, 42, 141);
+}
+
+.submit-btn::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(22, 194, 194);
+  top: -40%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  transition: top 1s, opacity 0.2s 0.3s;
+}
+
+.submit-btn::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(22, 194, 194);
+  bottom: -40%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  transition: bottom 1s, opacity 0.2s 0.3s;
+}
+
+.submit-btn span::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(22, 194, 194);
+  bottom: 50%;
+  left: -30%;
+  position: absolute;
+  transform: translate(0, -50%);
+  transition: left 1s, opacity 0.2s 0.3s;
+}
+
+.submit-btn span::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(22, 194, 194);
+  bottom: 50%;
+  right: -30%;
+  position: absolute;
+  transform: translate(0, -50%);
+  transition: right 1s, opacity 0.2s 0.3s;
+}
+
+.submit-btn:hover::before {
+  top: 30%;
+  opacity: 0;
+}
+
+.submit-btn:hover::after {
+  bottom: 30%;
+  opacity: 0;
+}
+
+.submit-btn:hover span::before {
+  left: 45%;
+  opacity: 0;
+}
+
+.submit-btn:hover span::after {
+  right: 45%;
+  opacity: 0;
+}
