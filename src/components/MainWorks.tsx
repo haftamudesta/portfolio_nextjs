@@ -69,7 +69,7 @@ const MainWorks = () => {
                                                         <div className="flex flex-wrap gap-4">    
                                                         {project.technoloy.map((tech,i)=>(
                                                         <span key={i}
-                                                        className="flex px-2 py-1 rounded-full bg-white/40 text-white text-sm border border-white/60 gap-1 text-start"
+                                                        className="flex md:px-2 py-1 rounded-full bg-white/40 text-white text-sm border border-white/60 gap-0.5 md:gap-1 text-start"
                                                         >
                                                                 <tech.iconName/>
                                                                 <span>{tech.name}</span>
@@ -77,7 +77,7 @@ const MainWorks = () => {
                                                         ))}
                                                         </div>
                                                        <div className='mt-auto pt-4'>
-                                                       <div className="mt-8 bg-linear-45 from-teal-500 to-teal-800 hover:bg-teal-100 text-white text-3xl rounded-lg font-bold w-full py-2 cursor-pointer transition-colors duration-200">
+                                                       <div className="mt-6 bg-linear-45 from-teal-500 to-teal-800 hover:bg-teal-100 text-white text-3xl rounded-lg font-bold w-full py-2 cursor-pointer transition-colors duration-200">
                                                        <Link
                                                         href={project.href}
                                                         className="block w-full h-full text-center"
