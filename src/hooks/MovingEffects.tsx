@@ -7,8 +7,8 @@ class MovingParticles{
         speed:{x:number,y:number}
 
         radius:number;
-        color:number;
-        constructor(ctx:CanvasRenderingContext2d){
+        color:string;
+        constructor(ctx:CanvasRenderingContext2D){
                 this.x=Math.random()*ctx.canvas.width,
                 this.y=Math.random()*ctx.canvas.height,
                 this.speed={
@@ -18,14 +18,14 @@ class MovingParticles{
                 this.radius=Math.random()*1.5 +0.5
                 this.color=`rgba(${Math.random()*100 +155},${Math.random()*100 +155},${Math.random()*100 +155},0.5)`
         }
-        update(ctx:CanvasRenderingContext2d){
+        update(ctx:CanvasRenderingContext2D){
                 this.x +=this.speed.x;
                 this.y +=this.speed.y;
         // Bounce off the edges of the canvas
         if (this.x < 0 || this.x > ctx.canvas.width) this.speed.x *= -1;
         if (this.y < 0 || this.y > ctx.canvas.height) this.speed.y *= -1;
         }
-        draw(ctx:CanvasRenderingContext2d) {
+        draw(ctx:CanvasRenderingContext2D) {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2); // Draw a circle
                 ctx.fillStyle = this.color;
@@ -36,7 +36,7 @@ class MovingParticles{
 export function MovingParticleCanvas(){
         const particles=useRef<MovingParticles[]>([])
         const draw=useCallback(
-          (ctx:CanvasRenderingContext2d) => {
+          (ctx:CanvasRenderingContext2D) => {
             if(particles.current.length===0){
                 particles.current=Array.from({length:100},()=>new MovingParticles(ctx))
             }
