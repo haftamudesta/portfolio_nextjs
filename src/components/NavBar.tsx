@@ -28,6 +28,7 @@ const navLinks=[
 export const NavBar = () => {
         const [isOpenMenu,setIsOpenMenu]=useState(false)
   return (
+     <main>
     <motion.nav
      className="fixed w-full z-50 bg-linear-45 from-blue-800 to-blue-950 transition-all duration-300 ease-out text-white"
      id='navbar'
@@ -61,25 +62,27 @@ export const NavBar = () => {
                 }
         </button>
         </div>
-        {isOpenMenu &&(
-                <motion.div
-                initial={{opacity:0,x:-400}}
-                animate={{opacity:1,x:0}}
-                transition={{duration:0.5}}
-                className='md:hidden mt-4 mb-4 space-y-4 bg-teal-600 w-[200px]'
-                >
-                        {navLinks.map((item,i)=>(
-                                <a key={i} href={item.href}
-                                onClick={()=>setIsOpenMenu(false)}
-                                className='block px-4 py-2 text-white/80 hover:text-indigo-900 hover:bg-white/10 rounded-lg transition-colors capitalize font-extrabold'
-                                >
-                                        {item.name}
-                                </a>
-                        ))}
-
-                </motion.div>
-        )}
+        
     </motion.nav>
+    {isOpenMenu &&(
+        <motion.div
+        initial={{opacity:0,x:-400}}
+        animate={{opacity:1,x:0}}
+        transition={{duration:0.5}}
+        className='md:hidden mt-2 bg-teal-600 w-[200px] min-h-screen'
+        >
+                {navLinks.map((item,i)=>(
+                        <a key={i} href={item.href}
+                        onClick={()=>setIsOpenMenu(false)}
+                        className='block px-4 py-2 text-white/80 hover:text-indigo-900 hover:bg-white/10 rounded-lg transition-colors capitalize font-extrabold'
+                        >
+                                {item.name}
+                        </a>
+                ))}
+
+        </motion.div>
+)}
+</main>
   )
 }
 
