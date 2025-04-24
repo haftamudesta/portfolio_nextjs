@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 const Stats = () => {
   return (
     <motion.main
-    className ="flex flex-col  justify-start md:justify-center md:items-center gap-4"
+    className ="flex flex-col md:justify-center md:items-center"
     >
         {stats.map(({number,title},index)=>{
             return (

@@ -69,7 +69,7 @@ export const NavBar = () => {
         initial={{opacity:0,x:-400}}
         animate={{opacity:1,x:0}}
         transition={{duration:0.5}}
-        className='md:hidden mt-2 bg-teal-600 w-[200px] min-h-screen'
+        className='md:hidden z-100 mt-2 bg-teal-600 w-[200px] min-h-screen'
         >
                 {navLinks.map((item,i)=>(
                         <a key={i} href={item.href}

@@ -7,7 +7,7 @@ import styles from "./About.module.css"
 
 const About = () => {
   return (
-    <motion.main
+    <motion.div
     initial={{opacity:0,y:100}}
     whileInView={{opacity:1,y:0}}
     transition={{duration:0.8}}
@@ -53,7 +53,7 @@ const About = () => {
                 </motion.div>
         
         </div>
-    </motion.main>
+    </motion.div>
   )
 }
 
