@@ -9,7 +9,7 @@ const Stats = () => {
     >
         {stats.map(({number,title},index)=>{
             return (
-                <div className="border-2 border-gray-400 mb-4 w-[350px] h-[150px] pl-4" key={index}>
+                <div className="border-2 border-gray-400 mb-4 w-[350px] h-[150px] md:pl-4" key={index}>
                     <button className="p-4  text-pink-300 rounded-full font-bold font-size-[50px] border border-pink-400 border-r-red-700 border-l-slate-700 mt-2">{number}</button>
                     <p className="text-white">{parse(title)}</p>
                 </div>
