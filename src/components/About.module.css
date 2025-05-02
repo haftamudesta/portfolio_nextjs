@@ -12,7 +12,8 @@
       }
       
       .about__stats {
-        margin-left: 24px;
+        margin-left: 0;
+        margin-top: 8px;
       }
       
       .download_button {
