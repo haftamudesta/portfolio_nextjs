@@ -30,7 +30,7 @@ export const NavBar = () => {
   return (
      <main>
     <motion.nav
-     className="fixed w-full z-5 bg-linear-45 from-blue-800 to-blue-950 transition-all duration-300 ease-out text-white"
+     className="fixed w-full z-50 bg-linear-45 from-blue-800 to-blue-950 transition-all duration-300 ease-out text-white shadow-lg"
      id='navbar'
     >
         <div className="flex max-w-7xl mx-auto px-6 py-3 items-center justify-between">
@@ -42,7 +42,7 @@ export const NavBar = () => {
                         </div>
                 </div>
         </div>
-        <span className="font-semibold text-content/90 group-hover:text-blue-500 transition-colors hidden sm:flex">Haftamu Desta</span>
+        <span className="font-semibold text-content/90 group-hover:text-blue-500 transition-colors">Haftamu Desta</span>
         </div>
         <div className="hidden md:flex items-center gap-6">
                 <div className="flex items-center gap-6 bg-background/20 px-4 py-2 rounded-full border border-white/5 shadow-lg shadow-indigo-500 text-xl font-bold capitalize">
@@ -68,13 +68,14 @@ export const NavBar = () => {
         <motion.div
         initial={{opacity:0,x:-400}}
         animate={{opacity:1,x:0}}
+        exit={{ opacity: 0, x: -400 }}
         transition={{duration:0.8}}
-        className='fixed md:hidden z-10 mt-2 bg-teal-600 w-[200px] min-h-screen'
+        className='fixed md:hidden z-40 inset-0 pt-16 bg-blue-900/95 backdrop-blur-sm'
         >
                 {navLinks.map((item,i)=>(
                         <a key={i} href={item.href}
                         onClick={()=>setIsOpenMenu(false)}
-                        className='block px-4 py-2 text-white/80 hover:text-indigo-900 hover:bg-white/10 rounded-lg transition-colors capitalize font-extrabold'
+                        className='block px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-colors capitalize font-bold text-x'
                         >
                                 {item.name}
                         </a>
