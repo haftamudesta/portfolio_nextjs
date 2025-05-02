@@ -30,7 +30,7 @@ const Skills = () => {
                         whileHover={{
                                 y:-30
                         }}
-                        className="group relative h-[300px] rounded-4xl overflow-hidden bg-linear-45 from-blue-950 to-blue-800 border border-white/80 cursor-pointer text-white"
+                        className="group relative h-[350px] rounded-4xl overflow-hidden bg-linear-45 from-blue-950 to-blue-800 border border-white/80 cursor-pointer text-white"
                         >
                                 <motion.div
                                 whileHover={{scale:1.2}}
