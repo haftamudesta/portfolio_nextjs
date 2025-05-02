@@ -24,8 +24,8 @@ const ContactMe = () => {
   }
   return (
     <motion.main 
-    initial={{opacity:0,x:100}}
-    whileInView={{opacity:1,x:0}}
+    initial={{opacity:0,y:-200}}
+    whileInView={{opacity:1,y:0}}
     transition={{
       duration:2.8,
       delay:0.4
