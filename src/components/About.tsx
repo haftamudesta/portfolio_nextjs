@@ -47,7 +47,7 @@ const About = () => {
                         </a>
                 </motion.div>
                 <motion.div
-                className={styles.about__stats}
+                className={`${styles.about__stats} sm:w-[200px]`}
                 >
                         <Stats />
                 </motion.div>

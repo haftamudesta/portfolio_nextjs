@@ -30,7 +30,7 @@ export const NavBar = () => {
   return (
      <main>
     <motion.nav
-     className="fixed w-full z-50 bg-linear-45 from-blue-800 to-blue-950 transition-all duration-300 ease-out text-white"
+     className="fixed w-full z-5 bg-linear-45 from-blue-800 to-blue-950 transition-all duration-300 ease-out text-white"
      id='navbar'
     >
         <div className="flex max-w-7xl mx-auto px-6 py-3 items-center justify-between">
@@ -68,8 +68,8 @@ export const NavBar = () => {
         <motion.div
         initial={{opacity:0,x:-400}}
         animate={{opacity:1,x:0}}
-        transition={{duration:0.5}}
-        className='md:hidden z-100 mt-2 bg-teal-600 w-[200px] min-h-screen'
+        transition={{duration:0.8}}
+        className='fixed md:hidden z-10 mt-2 bg-teal-600 w-[200px] min-h-screen'
         >
                 {navLinks.map((item,i)=>(
                         <a key={i} href={item.href}
