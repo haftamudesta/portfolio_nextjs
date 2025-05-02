@@ -30,7 +30,7 @@ const ContactMe = () => {
       duration:2.8,
       delay:0.4
     }}
-    className="bg-linear-45 from-blue-950 to-blue-800" id="main_contact w-full"> 
+    className="bg-linear-45 from-blue-950 to-blue-800" id="main_contact"> 
     <h1 className="text-center text-2xl text-white font-bold underline mb-4">Contact Me</h1>
     <div className='flex flex-col items-center justify-center text-white md:flex-row md:justify-between md:items-baseline md:ml-4 md:gap:4 xl:gap-12 lg:justify-center'>
     
