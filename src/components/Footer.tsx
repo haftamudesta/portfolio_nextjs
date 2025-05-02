@@ -65,14 +65,10 @@ const Footer = () => {
         </div>
         </Link>
         <motion.p 
-        initial={{opacity:0.5,x:"100vw"}}
-        whileInView={{opacity:1,x:"-100vw"}}
+        initial={{opacity:0.5,y:-300}}
+        whileInView={{opacity:1,y:0}}
         transition={{
-                duration:12,
-                repeat:Infinity,
-                delay:1.2,
-                type: "spring", 
-                stiffness: 50, 
+                duration:2.1,
         }}
         className="text-white font-bold flex items-center justify-center mt-6 mb-8">
         ©{new Date().getFullYear()} Haftamu Desta. All rights reserved

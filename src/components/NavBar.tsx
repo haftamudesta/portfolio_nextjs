@@ -42,7 +42,7 @@ export const NavBar = () => {
                         </div>
                 </div>
         </div>
-        <span className="font-semibold text-content/90 group-hover:text-blue-500 transition-colors hidden sm:flex">Haftamu Desta</span>
+        <span className="font-semibold text-content/90 group-hover:text-blue-500 transition-colors hidden md:flex">Haftamu Desta</span>
         </div>
         <div className="hidden md:flex items-center gap-6">
                 <div className="flex items-center gap-6 bg-background/20 px-4 py-2 rounded-full border border-white/5 shadow-lg shadow-indigo-500 text-xl font-bold capitalize">
