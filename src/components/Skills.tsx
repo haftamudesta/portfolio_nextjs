@@ -43,7 +43,7 @@ const Skills = () => {
                                                 <FaArrowTurnDown className="text-teal-300 font-size-[40px]"/>
                                         </motion.div> 
                                 </motion.div>
-                                <div className="flex flex-wrap gap-4">
+                                <div className="flex flex-wrap gap-2">
                                 {skill.technologies.map((tech,i)=>{
                                         
                                         return (
@@ -59,7 +59,7 @@ const Skills = () => {
                                         }}
                                         key={i}
                                         >
-                                                <div className="flex flex-wrap items-center border-2 border-gray-500 rounded-full gap-2 px-2 py-1 hover:bg-indigo-700 dark:hover:bg-gray-800 transition-colors duration-200">
+                                                <div className="flex flex-wrap items-center border-2 border-gray-500 rounded-full gap-2 px-1 py-1 hover:bg-indigo-700 dark:hover:bg-gray-800 transition-colors duration-200">
                                                         <tech.iconName
                                                         className={`${tech.color} text-xl font-bold`}/>
                                                         <p className={`font-semibold`}>
