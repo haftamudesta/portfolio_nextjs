@@ -24,13 +24,12 @@ const navLinks=[
         },
 ];
 
-
 export const NavBar = () => {
         const [isOpenMenu,setIsOpenMenu]=useState(false)
   return (
      <main>
     <motion.nav
-     className="fixed w-full z-50 bg-linear-45 from-blue-800 to-blue-950 transition-all duration-300 ease-out text-white shadow-lg"
+     className="fixed  w-[420px] sm:w-full z-50 bg-linear-45 from-blue-800 to-blue-950 transition-all duration-300 ease-out text-white shadow-lg"
      id='navbar'
     >
         <div className="flex max-w-7xl mx-auto px-6 py-3 items-center justify-between">
@@ -42,7 +41,7 @@ export const NavBar = () => {
                         </div>
                 </div>
         </div>
-        <span className="font-semibold text-content/90 group-hover:text-blue-500 transition-colors hidden md:flex">Haftamu Desta</span>
+        <span className="font-semibold text-content/90 group-hover:text-blue-500 transition-colors">Haftamu Desta</span>
         </div>
         <div className="hidden md:flex items-center gap-6">
                 <div className="flex items-center gap-6 bg-background/20 px-4 py-2 rounded-full border border-white/5 shadow-lg shadow-indigo-500 text-xl font-bold capitalize">
