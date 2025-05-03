@@ -19,7 +19,7 @@ export const NavBar = () => {
               className="fixed w-full max-w-[100vw] z-50 bg-gradient-to-r from-blue-800 px-4 to-blue-950 text-white shadow-lg overflow-hidden"
               id='navbar'
             >
-              <div className="flex max-w-2xl  px-2 py-3 items-center justify-between overflow-hidden">
+              <div className="flex items-center justify-between max-w-7xl  px-4 py-3 ">
                 {/* Logo & Name */}
                 <div className="flex items-center gap-8">
                   <div className="relative h-8 w-8 rounded-full overflow-hidden">
@@ -31,14 +31,13 @@ export const NavBar = () => {
             </div>
             <span className="font-semibold text-white/90 group-hover:text-blue-500 transition-colors">Haftamu Desta</span>
           </div>
-          <div className="hidden sm:flex items-center gap-6">
+          <div className="hidden sm:flex items-center gap-8">
             <div className="flex items-center gap-6 bg-white/10 px-4 py-2 rounded-full border border-white/5 shadow-lg shadow-indigo-500/20 text-xl font-bold capitalize">
               {navLinks.map((item, i) => (
                 <MenuItem key={item.name} index={i} href={item.href}>{item.name}</MenuItem>
               ))}
             </div>
           </div>
-          <div>
           <button 
             className='sm:hidden p-2 rounded-lg bg-white/10 hover:bg-blue-400 transition-colors'
             onClick={() => setIsOpenMenu(!isOpenMenu)}
@@ -49,7 +48,6 @@ export const NavBar = () => {
               <Bars3Icon className='h-6 w-6 text-white' />
             )}
           </button>
-          </div>
         </div>
       </motion.nav>
       {isOpenMenu && (
