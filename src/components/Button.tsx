@@ -4,7 +4,7 @@ export const Button = ({children}:{
         children:React.ReactNode
 }) => {
   return (
-        <motion.div className=" text-2xl px-3 py-1 md:ml-16 mt-6 md:px-4 md:py-2 rounded-full md:text-4xl text-white bg-sky-500"
+        <motion.div className=" text-xl px-3 py-1 md:ml-16 mt-6 md:px-4 md:py-2 rounded-full md:text-4xl text-white bg-sky-500"
         animate={{
           scale:[1,1.2,1],
           backgroundColor:["#3b82f6","6Ba5fA","#3b82f6"],

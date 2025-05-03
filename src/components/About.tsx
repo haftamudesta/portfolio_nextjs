@@ -34,7 +34,7 @@ const About = () => {
         className="text-center">
               About <span>Me</span>
         </motion.h1>
-        <div className={styles.about__container}>
+        <div className={`${styles.about__container} `}>
                 <motion.div
                 className={styles.about__info}
                 >
@@ -47,7 +47,7 @@ const About = () => {
                         </a>
                 </motion.div>
                 <motion.div
-                className={`${styles.about__stats} sm:w-[200px]`}
+                className={`${styles.about__stats} w-[150px] md:w-[200px]`}
                 >
                         <Stats />
                 </motion.div>
