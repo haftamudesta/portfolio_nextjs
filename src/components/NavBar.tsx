@@ -29,7 +29,7 @@ export const NavBar = () => {
   return (
      <main>
     <motion.nav
-     className="fixed  w-[420px] sm:w-full z-50 bg-linear-45 from-blue-800 to-blue-950 transition-all duration-300 ease-out text-white shadow-lg"
+     className="fixed  w-[380px] sm:w-full z-50 bg-linear-45 from-blue-800 to-blue-950 transition-all duration-300 ease-out text-white shadow-lg"
      id='navbar'
     >
         <div className="flex max-w-7xl mx-auto px-6 py-3 items-center justify-between">
