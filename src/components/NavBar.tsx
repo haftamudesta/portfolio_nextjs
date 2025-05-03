@@ -16,10 +16,10 @@ export const NavBar = () => {
         return (
           <main>
             <motion.nav
-              className="fixed w-[380px] sm:w-full z-50 bg-gradient-to-r from-blue-800 to-blue-950 text-white shadow-lg"
+              className="fixed w-full max-w-[100vw] z-50 bg-gradient-to-r from-blue-800 px-4 to-blue-950 text-white shadow-lg overflow-hidden"
               id='navbar'
             >
-              <div className="flex max-w-7xl mx-auto px-6 py-3 items-center justify-between">
+              <div className="flex max-w-2xl  px-2 py-3 items-center justify-between overflow-hidden">
                 {/* Logo & Name */}
                 <div className="flex items-center gap-8">
                   <div className="relative h-8 w-8 rounded-full overflow-hidden">
@@ -31,15 +31,16 @@ export const NavBar = () => {
             </div>
             <span className="font-semibold text-white/90 group-hover:text-blue-500 transition-colors">Haftamu Desta</span>
           </div>
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden sm:flex items-center gap-6">
             <div className="flex items-center gap-6 bg-white/10 px-4 py-2 rounded-full border border-white/5 shadow-lg shadow-indigo-500/20 text-xl font-bold capitalize">
               {navLinks.map((item, i) => (
                 <MenuItem key={item.name} index={i} href={item.href}>{item.name}</MenuItem>
               ))}
             </div>
           </div>
+          <div>
           <button 
-            className='md:hidden p-2 rounded-lg bg-white/10 hover:bg-blue-400 transition-colors'
+            className='sm:hidden p-2 rounded-lg bg-white/10 hover:bg-blue-400 transition-colors'
             onClick={() => setIsOpenMenu(!isOpenMenu)}
           >
             {isOpenMenu ? (
@@ -48,6 +49,7 @@ export const NavBar = () => {
               <Bars3Icon className='h-6 w-6 text-white' />
             )}
           </button>
+          </div>
         </div>
       </motion.nav>
       {isOpenMenu && (
@@ -56,7 +58,7 @@ export const NavBar = () => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -400 }}
           transition={{ duration: 0.3 }}
-          className='fixed md:hidden z-40 inset-0 pt-24 bg-blue-900/95 backdrop-blur-sm'
+          className='fixed sm:hidden z-40 inset-x-0 pt-24 bg-blue-900/95 backdrop-blur-sm'
         >
         <div className="flex flex-col px-4 space-y-4">
             {navLinks.map((item, i) => (
