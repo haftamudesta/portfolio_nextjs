@@ -20,7 +20,7 @@ const AllProjects = () => {
                 transition={{duration:0.8}}
                 className="flex flex-col items-center mb-6"
                 >
-                        <h1 className="text-white text-3xl md:text-5xl font-black text-center mb-4">Sample Projects Completed</h1>
+                        <h1 className="text-white text-3xl md:text-5xl font-black text-center mb-4">More Projects Completed</h1>
                         <div className="flex items-center justify-center w-40 h-2 bg-gradient-to-r from-blue-600 to-pink-600 mb-12"/>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 ">
                                 {moreProjects.map((project,index)=>(
