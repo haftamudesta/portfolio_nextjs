@@ -4,6 +4,7 @@ import MenuItem from './MenuItem';
 import { useState } from 'react';
 import { XMarkIcon, Bars3Icon } from '@heroicons/react/16/solid';
 
+
 const navLinks = [
   { name: "about me", href: "#about" },
   { name: "skills", href: "#skills" },
@@ -14,13 +15,14 @@ export const NavBar = () => {
         const [isOpenMenu, setIsOpenMenu] = useState(false);
       
         return (
-          <main>
+          <>
+          <div className='fixed w-full max-w-[100vw] z-50 top-0 right-0 left-0'>
             <motion.nav
-              className="fixed w-full max-w-[100vw] z-50 bg-gradient-to-r from-blue-800 px-4 to-blue-950 text-white shadow-lg overflow-hidden"
+              className=" bg-gradient-to-r from-blue-800 px-4 to-blue-950 text-white shadow-lg"
               id='navbar'
             >
               <div className="flex items-center justify-between max-w-7xl  px-4 py-3 ">
-                {/* Logo & Name */}
+               
                 <div className="flex items-center gap-8">
                   <div className="relative h-8 w-8 rounded-full overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-red-400 animate-spin [mask-image:linear-gradient(transparent,white)]">
@@ -39,7 +41,7 @@ export const NavBar = () => {
             </div>
           </div>
           <button 
-            className='sm:hidden p-2 rounded-lg bg-white/10 hover:bg-blue-400 transition-colors'
+            className='sm:hidden z-50 p-2 rounded-lg bg-white/10 hover:bg-blue-400 transition-colors'
             onClick={() => setIsOpenMenu(!isOpenMenu)}
           >
             {isOpenMenu ? (
@@ -56,7 +58,7 @@ export const NavBar = () => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -400 }}
           transition={{ duration: 0.3 }}
-          className='fixed sm:hidden z-40 inset-x-0 pt-24 bg-blue-900/95 backdrop-blur-sm'
+          className='sm:hidden inset-x-0 z-40 top-16 pt-24 bg-blue-900/95 backdrop-blur-sm'
         >
         <div className="flex flex-col px-4 space-y-4">
             {navLinks.map((item, i) => (
@@ -72,6 +74,8 @@ export const NavBar = () => {
           </div>
         </motion.div>
       )}
-    </main>
+    </div>
+    <div className="h-16"></div>
+    </>
     );
 };
