@@ -79,7 +79,7 @@ export const projects=[
 
     {
         title:"Blog App",
-        description:"The product store is a website where users can browse, add,edit and dlete a product,  . It typically includes features like:",
+        description:"The blog app is a web application that allows you to create, publish, manage, and share blog posts. This apps allows you maintain a blog directly from your smartphones, tablets, or computers.",
         technoloy:[
             {name:"Node.js",iconName:FaNodeJs,color:"text-green-500"},
             {name:"MongoDB",iconName:SiMongodb,color:"text-green-600"},
