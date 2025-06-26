@@ -86,8 +86,7 @@ export const projects=[
             {name:"Express.js",iconName:SiExpress,color:"text-white"},
             {name:"React",iconName:FaReact,color:"text-blue-700"},
             {name:"Tailwindcss",iconName:SiTailwindcss,color:"text-sky-700"}, 
-            {name:"firebase",iconName:SiFirebase,color:"text-sky-700"},
-            {name:"moment",iconName:SiMomenteo,color:"text-sky-700"},     
+            {name:"firebase",iconName:SiFirebase,color:"text-sky-700"},     
         ],
         image:"/projectImages/users.PNG",
         href:"https://github.com/haftamudesta/BlogApp_MERN"
