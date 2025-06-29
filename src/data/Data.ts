@@ -9,7 +9,8 @@ import {
     FaGit,
     FaGithub,
     FaNpm,
-    FaChrome } from "react-icons/fa"
+    FaChrome, 
+    FaPython} from "react-icons/fa"
 import { MdCss,MdJavascript, MdDesignServices} from "react-icons/md"
 import { FcCollaboration } from "react-icons/fc";
 import { DiResponsive } from "react-icons/di";
@@ -40,7 +41,6 @@ import {
     SiLucide,
     SiRubocop,
     SiPrettier,
-    SiMomenteo,
   } from "react-icons/si"
   import { Gem } from 'lucide-react';
 import { VscVscode } from "react-icons/vsc";
@@ -105,8 +105,7 @@ export const moreProjects=[
                 {name:"PostgreSQL",iconName:SiPostgresql,color:"text-blue-500"},
                 {name:"Neon",iconName:FaDatabase,color:"text-teal-600"},
                 {name:"Express.js",iconName:SiExpress,color:"text-white"},
-                {name:"React Lucide",iconName:SiLucide,color:"text-white"},
-                
+                {name:"React Lucide",iconName:SiLucide,color:"text-white"}, 
         ],
         image:"/projectImages/productstore.PNG",
         href:"https://github.com/haftamudesta/product-store"
@@ -200,7 +199,6 @@ export const personalInformation=[
             title:'completed projects'
         }
     ]
-
 export const skills= [
     {
         id: 1,
@@ -231,7 +229,8 @@ export const skills= [
               {name:"Express.js",iconName:SiExpress,color:"text-white"},
               {name:"FireBase",iconName:SiFirebase,color:"text-gray-500"},
               {name:"Redis",iconName:SiRedis,color:"text-red-500"},
-              {name:"GraphQL",iconName:SiGraphql,color:"text-purple-500"},    
+              {name:"GraphQL",iconName:SiGraphql,color:"text-purple-500"},
+              {name:"Python",iconName:FaPython,color:"text-purple-500"}, 
       ]
       },
       {
@@ -269,5 +268,5 @@ export const skills= [
               {name:"Communication",iconName:RiUserCommunityFill,color:"text-green-500"},
               {name:"Wireframing",iconName: MdDesignServices,color:"text-gray-400"},   
       ]
-      },
+      }
   ]
