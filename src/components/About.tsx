@@ -436,9 +436,9 @@ function About() {
             Ready to Create Something Great?
           </h2>
           <p className="text-lg mb-6 max-w-2xl mx-auto text-sky-600 font-bold">
-            Let's turn your vision into reality. I&apos;m currently available
-            for freelance projects, collaborations, contract work, and am ready
-            for full-time employment opportunities.
+            Let&apos;s turn your vision into reality. I&apos;m currently
+            available for freelance projects, collaborations, contract work, and
+            am ready for full-time employment opportunities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="#main_contact">
