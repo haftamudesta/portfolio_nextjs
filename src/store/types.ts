@@ -1,7 +1,7 @@
 import { StateCreator } from 'zustand';
 
 import { UISlice } from './slices/uiSlice';
-import { PersistOptions, devtools } from 'zustand/middleware';
+import { PersistOptions } from 'zustand/middleware';
 
 export type StoreState = UISlice;
 
