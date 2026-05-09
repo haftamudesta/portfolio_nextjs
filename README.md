@@ -85,7 +85,6 @@
 - **Interactive Animations** - Smooth scroll animations and hover effects using Framer Motion
 - **Hero Section** - Dynamic animated introduction with particle background
 - **Skills Showcase** - Visual representation of technical expertise
-- **Projects Gallery** - Portfolio of completed work (coming soon)
 - **Downloadable Resume** - PDF resume download option
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
