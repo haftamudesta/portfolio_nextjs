@@ -163,7 +163,7 @@ function About() {
           Turning Ideas into Impact
         </h2>
         <p className="text-white/90 text-lg max-w-3xl mx-auto">
-          I'm a passionate Full Stack Developer and Electrical Engineer
+          I am a passionate Full Stack Developer and Electrical Engineer
           dedicated to building beautiful, performant, and user-centric web
           applications while leveraging engineering principles to solve
           real-world problems.
@@ -187,8 +187,9 @@ function About() {
                 Mekele Institute of Technology
               </span>{" "}
               (2012), where I earned my BSc in Electrical and Electronics
-              Engineering. Being among the region's top scorers, I was honored
-              with a full scholarship that set the foundation for my career.
+              Engineering. Being among the region&apos;s top scorers, I was
+              honored with a full scholarship that set the foundation for my
+              career.
             </p>
             <p className="leading-relaxed dark:text-gray-300">
               In 2015, I pursued my passion for specialized systems at{" "}
@@ -209,12 +210,12 @@ function About() {
               modern web technologies.
             </p>
             <p className="leading-relaxed dark:text-gray-300">
-              Today, I'm expanding my horizons through{" "}
+              Today, I&apos;m expanding my horizons through{" "}
               <span className="font-semibold">FreeCodeCamp</span>, diving deep
               into Node.js and Python while continuing my role as Resident
-              Engineer. I'm currently developing a full-featured application
-              that demonstrates my ability to bridge hardware engineering
-              principles with cutting-edge web technologies.
+              Engineer. I&apos;m currently developing a full-featured
+              application that demonstrates my ability to bridge hardware
+              engineering principles with cutting-edge web technologies.
             </p>
           </div>
 
@@ -326,7 +327,7 @@ function About() {
               <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
                 To bridge the gap between hardware engineering and modern web
                 development, creating innovative solutions that make a
-                meaningful impact on users' lives.
+                meaningful impact on users&apos; lives.
               </p>
             </div>
           </CardContent>
@@ -435,9 +436,9 @@ function About() {
             Ready to Create Something Great?
           </h2>
           <p className="text-lg mb-6 max-w-2xl mx-auto text-sky-600 font-bold">
-            Let's turn your vision into reality. I'm currently available for
-            freelance projects, collaborations, contract work, and am ready for
-            full-time employment opportunities.
+            Let's turn your vision into reality. I&apos;m currently available
+            for freelance projects, collaborations, contract work, and am ready
+            for full-time employment opportunities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="#main_contact">

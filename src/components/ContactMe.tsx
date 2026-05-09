@@ -46,7 +46,7 @@ const ContactMe = () => {
           </motion.h1>
           <div className="w-24 h-1 bg-white/50 mx-auto rounded-full"></div>
           <p className="text-white/80 mt-4 text-lg">
-            I'm always excited to hear about new opportunities and
+            I am always excited to hear about new opportunities and
             collaborations
           </p>
         </div>
@@ -174,7 +174,7 @@ const ContactMe = () => {
                     animate={{ opacity: 1, y: 0 }}
                     className="text-green-300 bg-green-900/30 p-3 rounded-lg text-center"
                   >
-                    ✨ Email sent successfully! I'll get back to you soon.
+                    ✨ Email sent successfully! I will get back to you soon.
                   </motion.p>
                 )}
               </form>
